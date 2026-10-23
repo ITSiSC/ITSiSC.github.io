@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #1e1b4b;
+    background-color: #1a1a1a;
     color: #f8fafc;
     font-family: system-ui, -apple-system, sans-serif;
     min-height: 100vh;
@@ -17,11 +17,20 @@ body {
     padding: 20px;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
 h1 {
     margin-bottom: 32px;
     font-size: 2.2rem;
     letter-spacing: -0.025em;
-    color: #ffffff;
+    color: #4CAF50;
 }
 
 .card-contact {
@@ -30,7 +39,7 @@ h1 {
 
 .titlu {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #94a3b8;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -43,7 +52,7 @@ h1 {
 }
 
 .email-link {
-    color: #38bdf8;
+    color: #4CAF50;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.2s ease;
@@ -52,7 +61,7 @@ h1 {
 }
 
 .email-link:hover {
-    color: #7dd3fc;
-    border-bottom-color: #7dd3fc;
+    color: yellow;
+    border-bottom-color: #4CAF50;
     text-shadow: 0 0 12px rgba(125, 211, 252, 0.4);
 }
