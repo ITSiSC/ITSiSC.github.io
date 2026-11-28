@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git &amp; Web Fundamentals | Mafia IT SiSC</title>
+    <link rel="stylesheet" href="./git-web.css">
+    <link rel="icon" type="image/png" href="../assets/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+<!-- Navbar -->
+<header class="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="nav-brand">Mafia</a>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Deschide meniul" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="./git-web.html" class="nav-link active">Git &amp; Web Fundamentals</a>
+            <a href="../html-css/html-css.html" class="nav-link">HTML &amp; CSS</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Conținut Principal -->
+<main class="container">
+    <header class="page-header">
+        <h1>Git &amp; Web Fundamentals</h1>
+        <p class="subtitle">Bazele comunicării pe web și versionarea codului în echipă</p>
+    </header>
+
+    <!-- SECȚIUNEA 1: WEB FUNDAMENTALS -->
+    <section class="topic-section" id="web-fundamentals">
+<!--        <div class="section-badge">Secțiunea 01</div>-->
+        <h2><i class="fa-solid fa-globe section-icon" aria-hidden="true"></i> Web Fundamentals</h2>
+
+        <!-- Subsecțiunea HTTP -->
+        <article class="content-card">
+            <h3>HTTP --> HyperText Transfer Protocol</h3>
+            <p>
+                <strong>HTTP</strong> este un protocol bazat
+                pe modelul <strong>cerere-răspuns (request-response)</strong>.
+            </p>
+            <p>
+                Acesta stă la baza internetului împreună cu alte concepte fundamentale precum <strong>HTML</strong> și <strong>URL</strong>:
+            </p>
+
+            <ul class="concept-list">
+                <li>
+                    <strong>HTML (HyperText Markup Language)</strong> --> limbajul prin care structurăm pagini web
+                </li>
+                <li>
+                    <strong>URL (Uniform Resource Locator)</strong> --> o adresă unică a unei resurse de pe internet (ex: un site web)
+                </li>
+            </ul>
+
+            <figure class="diagram-box">
+                <img src="../assets/http.png" alt="Diagrama funcționării protocolului HTTP (Request - Response)">
+                <figcaption>Modelul cerere-răspuns (Client &rarr; Server &rarr; Client)</figcaption>
+            </figure>
+        </article>
+
+        <!-- Subsecțiunea Metode HTTP -->
+        <article class="content-card">
+            <h3>Metode HTTP</h3>
+            <p>
+                Aceste metode specifice HTTP-ului definesc <strong>acțiunea dorită</strong> asupra unei resurse de pe server
+                (operațiile de bază CRUD: Create, Read, Update, Delete). Apasă pe oricare metodă pentru detalii:
+            </p>
+
+            <div class="methods-grid">
+                <button type="button" class="method-item method-get info-trigger" data-topic="GET">
+                    <span class="method-name">GET</span>
+                    <span class="method-desc">Citește date</span>
+                </button>
+                <button type="button" class="method-item method-post info-trigger" data-topic="POST">
+                    <span class="method-name">POST</span>
+                    <span class="method-desc">Creează resurse</span>
+                </button>
+                <button type="button" class="method-item method-put info-trigger" data-topic="PUT">
+                    <span class="method-name">PUT</span>
+                    <span class="method-desc">Înlocuiește complet</span>
+                </button>
+                <button type="button" class="method-item method-patch info-trigger" data-topic="PATCH">
+                    <span class="method-name">PATCH</span>
+                    <span class="method-desc">Modifică parțial</span>
+                </button>
+                <button type="button" class="method-item method-delete info-trigger" data-topic="DELETE">
+                    <span class="method-name">DELETE</span>
+                    <span class="method-desc">Șterge resurse</span>
+                </button>
+            </div>
+        </article>
+
+        <!-- Subsecțiunea HTTP Status Codes -->
+        <article class="content-card">
+            <h3>HTTP Status Codes</h3>
+            <p>
+                Sunt coduri numerice formate din <strong>trei cifre</strong> care indică rezultatul procesării unei cereri de către server:
+            </p>
+
+            <div class="status-grid">
+                <button type="button" class="status-item status-1xx info-trigger" data-topic="1xx">
+                    <span class="status-code">1xx</span>
+                    <span class="status-desc">Informativ</span>
+                </button>
+                <button type="button" class="status-item status-2xx info-trigger" data-topic="2xx">
+                    <span class="status-code">2xx</span>
+                    <span class="status-desc">Succes</span>
+                </button>
+                <button type="button" class="status-item status-3xx info-trigger" data-topic="3xx">
+                    <span class="status-code">3xx</span>
+                    <span class="status-desc">Redirect</span>
+                </button>
+                <button type="button" class="status-item status-4xx info-trigger" data-topic="4xx">
+                    <span class="status-code">4xx</span>
+                    <span class="status-desc">Eroare de client</span>
+                </button>
+                <button type="button" class="status-item status-5xx info-trigger" data-topic="5xx">
+                    <span class="status-code">5xx</span>
+                    <span class="status-desc">Eroare de server</span>
+                </button>
+            </div>
+
+            <p class="hint-text">
+                Pentru mai multe detalii și exemple vizuale pentru fiecare cod în parte, poți verifica
+                <a href="https://http.cat" target="_blank" rel="noopener noreferrer" class="external-link">http.cat</a>!
+            </p>
+
+            <!-- Exemplu de cod + Săgeți SVG spre imagini -->
+            <div class="code-flow-wrapper">
+                <div class="code-box" id="code-box">
+                    <div class="code-header">
+                        <span class="code-lang">JavaScript (Express)</span>
+                        <button class="copy-btn" id="copy-btn" type="button">Copiază</button>
+                    </div>
+                    <pre><code><span class="tok-obj">app</span>.<span class="tok-fn">get</span>(<span class="tok-str">"/mafia"</span>, (<span class="tok-param">req</span>, <span class="tok-param">res</span>) =&gt; {
+    <span class="tok-kw">if</span> (<span class="tok-obj">croco</span>.<span class="tok-fn">joinedMafia</span>() === <span class="tok-bool">true</span>) {
+        <span class="tok-kw">return</span> <span class="tok-param">res</span>.<span class="tok-fn">status</span>(<span class="tok-num">214</span>);
+    } <span class="tok-kw">else</span> {
+        <span class="tok-kw">return</span> <span class="tok-param">res</span>.<span class="tok-fn">status</span>(<span class="tok-num">409</span>);
+    }
+});</code></pre>
+                </div>
+
+                <!-- Săgeți SVG (clicabile pe mobil) -->
+                <div class="svg-arrows">
+                    <svg viewBox="0 0 600 85" preserveAspectRatio="none">
+                        <defs>
+                            <marker id="arrow-green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                                <path d="M0,1 L7,4 L0,7 Z" fill="#34d399" />
+                            </marker>
+                            <marker id="arrow-red" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                                <path d="M0,1 L7,4 L0,7 Z" fill="#f87171" />
+                            </marker>
+                        </defs>
+
+                        <!-- Săgeată stânga (true -> 214) -->
+                        <g class="svg-branch" id="arrow-branch-green" role="button" tabindex="0" aria-label="Vezi rezultatul 214">
+                            <path d="M 250 4 C 250 45, 150 40, 150 76" fill="none" stroke="transparent" stroke-width="28" />
+                            <path class="arrow-line" d="M 250 4 C 250 45, 150 40, 150 76"
+                                  fill="none"
+                                  stroke="#34d399"
+                                  stroke-width="2.5"
+                                  stroke-dasharray="6 4"
+                                  marker-end="url(#arrow-green)" />
+                        </g>
+
+                        <!-- Săgeată dreapta (false -> 409) -->
+                        <g class="svg-branch" id="arrow-branch-red" role="button" tabindex="0" aria-label="Vezi rezultatul 409">
+                            <path d="M 350 4 C 350 45, 450 40, 450 76" fill="none" stroke="transparent" stroke-width="28" />
+                            <path class="arrow-line" d="M 350 4 C 350 45, 450 40, 450 76"
+                                  fill="none"
+                                  stroke="#f87171"
+                                  stroke-width="2.5"
+                                  stroke-dasharray="6 4"
+                                  marker-end="url(#arrow-red)" />
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- Desktop: 2 chenare | Mobil: 1 singur chenar interactiv -->
+                <div class="status-results-grid" id="status-results-grid" data-active="none">
+                    <p class="mobile-placeholder-msg">Apasă pe fiecare săgeată ca să vezi rezultatul!</p>
+
+                    <figure class="result-card result-success">
+                        <span class="result-badge badge-success">true &rarr; 214</span>
+                        <div class="result-img-wrap">
+                            <img src="../assets/214.jpg" alt="HTTP 214 Transformation Applied">
+                        </div>
+                    </figure>
+
+                    <figure class="result-card result-error">
+                        <span class="result-badge badge-error">false &rarr; 409</span>
+                        <div class="result-img-wrap">
+                            <img src="../assets/409.jpg" alt="HTTP 409 Conflict">
+                        </div>
+                    </figure>
+
+                    <p class="mobile-switch-hint" id="mobile-switch-hint"></p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- SECȚIUNEA 2: GIT -->
+    <section class="topic-section" id="git">
+<!--        <div class="section-badge">Secțiunea 02</div>-->
+        <h2><i class="fa-brands fa-git-alt section-icon" aria-hidden="true"></i> Git</h2>
+
+        <!-- 1. Ce este Git, GitLab și un Repository -->
+        <article class="content-card">
+            <h3>Ce sunt Git, GitLab și un Repository?</h3>
+            <p>
+                Atunci când lucrezi la un proiect software (singur sau în echipă), ai nevoie de un mod sigur
+                de a salva istoricul modificărilor și de a colabora fără să suprascrii munca altora:
+            </p>
+
+            <ul class="concept-list">
+                <li>
+                    <strong>Git</strong> --> un sistem de versionare al codului
+<!--                    distribuit de control al versiunilor (<em>Version Control System</em>)-->
+                    care rulează local pe calculatorul tău și urmărește fiecare modificare adusă fișierelor din proiect
+                </li>
+                <li>
+                    <strong>GitLab</strong> (la fel ca GitHub) --> o platformă web care găzduiește proiecte Git în cloud
+<!--                    oferind interfață vizuală, gestionarea permisiunilor, Merge Requests și pipeline-uri CI/CD.-->
+                </li>
+                <li>
+                    <strong>Repository (Repo)</strong> --> folderul proiectului monitorizat de Git care conține toate fișierele
+                    codului împreună cu întregul istoric al versiunilor
+<!--                    (stocat în folderul ascuns <code>.git</code>).-->
+                </li>
+            </ul>
+        </article>
+
+        <!-- 2. Basic Git Commands -->
+        <article class="content-card">
+            <h3>Basic Git Commands</h3>
+            <p>
+                Fluxul de lucru zilnic în Git se bazează pe câteva comenzi esențiale pe care le rulezi în terminal:
+            </p>
+
+            <ul class="concept-list">
+                <li>
+                    <code class="cmd-inline">git clone &lt;url&gt;</code> --> Descarcă pe calculatorul tău o copie completă
+                    a unui repo existent de pe GitLab / GitHub
+                </li>
+                <li>
+                    <code class="cmd-inline">git add &lt;fisier&gt;</code> (sau <code class="cmd-inline">git add .</code>) -->
+                    Marchează modificările din folderul de lucru pentru următorul commit
+                </li>
+                <li>
+                    <code class="cmd-inline">git commit -m "mesaj"</code> --> Salvează permanent în istoricul local un „snapshot”
+                    al modificărilor pregătite, însoțit de un mesaj scurt care explică ce ai schimbat
+                </li>
+                <li>
+                    <code class="cmd-inline">git push</code> --> Trimite commit-urile făcute local către repo-ul remote (de pe GitLab),
+                    ca să fie vizibile și pentru restul echipei
+                </li>
+                <li>
+                    <code class="cmd-inline">git pull</code> --> Descarcă și integrează automat în proiectul tău local cele mai noi
+                    modificări urcate de colegi pe repo-ul remote
+                </li>
+            </ul>
+        </article>
+
+        <!-- 3. Branching & Checkout -->
+        <article class="content-card">
+            <h3>Branching &amp; Checkout</h3>
+            <p>
+                Un <strong>branch</strong> (ramură) este o linie independentă de dezvoltare. În loc să lucrezi direct
+                pe branch-ul principal (main / master) și să riști să strici codul funcțional, îți creezi un branch separat
+                pentru fiecare funcționalitate nouă sau bugfix.
+            </p>
+
+            <ul class="concept-list">
+                <li>
+                    <code class="cmd-inline">git checkout &lt;nume-branch&gt;</code> (sau varianta echivalentă dar modernă
+                    <code class="cmd-inline">git switch &lt;nume-branch&gt;</code>) --> Mută mediul tău de lucru pe alt branch,
+                    actualizând fișierele din folder ca să reflecte starea acelui branch.
+                </li>
+                <li>
+                    <code class="cmd-inline">git checkout -b &lt;nume-branch&gt;</code> --> Creează un branch nou pornind din
+                    punctul curent și te mută instantaneu pe el
+                </li>
+            </ul>
+
+            <figure class="diagram-box diagram-light-bg">
+                <img src="../assets/branches.png" alt="Diagrama ramurilor în Git: Branch A, Branch B și Branch C">
+                <figcaption>Ramificarea dezvoltării în Git: fiecare branch evoluează izolat față de linia principală</figcaption>
+            </figure>
+        </article>
+
+        <!-- 4. Git Colaborativ -->
+        <article class="content-card">
+            <h3>Git Colaborativ</h3>
+            <p>
+                Când mai mulți oameni scriu cod în același timp, apar situații în care trebuie să pui modificări deoparte,
+                să unești branch-uri, să rezolvi suprapuneri sau să anulezi greșeli:
+            </p>
+
+            <ul class="concept-list">
+                <li>
+                    <strong>Stash (<code class="cmd-inline">git stash</code>)</strong> --&gt; Salvează temporar modificările
+                    necommitte-uite într-o „stivă” ascunsă și curăță folderul de lucru, ca să poți schimba rapid branch-ul;
+                    le aduci înapoi ulterior cu <code class="cmd-inline">git stash pop</code>
+                </li>
+            </ul>
+
+            <figure class="diagram-box diagram-light-bg">
+                <img src="../assets/stash.png" alt="Diagrama funcționării git stash și git stash pop">
+                <figcaption>Fluxul git stash: pui modificările deoparte și le recuperezi când revii</figcaption>
+            </figure>
+
+            <ul class="concept-list">
+                <li>
+                    <strong>Merge (<code class="cmd-inline">git merge &lt;branch&gt;</code>)</strong> --&gt; Unește istoricul unui
+                    branch (ex. <code>feature-1</code>) în branch-ul pe care te afli (ex. <code>main</code>), păstrând intact
+                    istoricul cronologic al ambelor ramuri
+                </li>
+                <li>
+                    <strong>Conflicte (Merge Conflicts)</strong> --&gt; Apar atunci când două branch-uri au modificat diferit
+                    <strong>aceeași linie</strong> din același fișier. Git oprește merge-ul și marchează zona cu
+                    <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code>, <code>=======</code> și <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>,
+                    cerându-ți să alegi manual varianta corectă și să faci un commit final
+                </li>
+            </ul>
+
+            <figure class="diagram-box diagram-light-bg">
+                <img src="../assets/conflicts.png" alt="Diagrama unui Merge Conflict între feature-1 și feature-2">
+                <figcaption>Exemplu de Merge Conflict când două branch-uri modifică aceeași linie</figcaption>
+            </figure>
+<!--                <h1>ia si citeste si asta daca esti smeker si ciumeg</h1>-->
+<!--                <li>-->
+<!--                    <strong>Rebase (<code class="cmd-inline">git rebase &lt;branch&gt;</code>)</strong> — Mută commit-urile-->
+<!--                    tale unul câte unul peste ultimul commit al altui branch, rescriind istoricul astfel încât să rămână-->
+<!--                    perfect liniar (fără commit-uri suplimentare de merge).-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <strong>Revert (<code class="cmd-inline">git revert &lt;commit-id&gt;</code>)</strong> — Anulează în siguranță-->
+<!--                    efectele unui commit anterior prin crearea unui <strong>commit nou</strong> cu modificările inverse-->
+<!--                    (ideal pe branch-uri publice, deoarece nu șterge istoricul existent).-->
+<!--                </li>-->
+        </article>
+    </section>
+
+
+</main>
+
+<!-- Modală detalii Metode & Status Codes -->
+<div class="modal-backdrop" id="info-modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-header">
+            <span class="modal-badge" id="modal-badge"></span>
+            <button type="button" class="modal-close" id="modal-close" aria-label="Închide">&times;</button>
+        </div>
+        <h3 id="modal-title"></h3>
+        <div class="modal-body" id="modal-body"></div>
+    </div>
+</div>
+
+<script src="./git-web.js"></script>
+</body>
+</html>

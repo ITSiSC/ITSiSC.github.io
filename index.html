@@ -4,38 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>IT SiSC - Contact Suport</title>
+    <title>Home | Mafia IT SiSC</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" type="image/png" href="./assets/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-<div class="contact">
-    <h1>Contact suport</h1>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="./index.html" class="nav-brand">Mafia</a>
 
-    <div class="card-contact">
-        <p class="titlu">Director</p>
-        <p class="info-persoana">Sebastian Gabriel Mihai | <a href="mailto:mihaigsebi@gmail.com" class="email-link">mihaigsebi@gmail.com</a> | +40 771 091 428</p>
-    </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Deschide meniul" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-    <div class="card-contact">
-        <p class="titlu">Lead FrontEnd</p>
-        <p class="info-persoana">Maria Veronica Holban-Ichim | <a href="mailto:maria92006v@gmail.com" class="email-link">maria92006v@gmail.com</a> | +40 763 575 367</p>
-    </div>
+            <nav class="nav-links" id="nav-links">
+                <a href="./git-web/git-web.html" class="nav-link">Git &amp; Web Fundamentals</a>
+                <a href="./html-css/html-css.html" class="nav-link">HTML &amp; CSS</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="card-contact">
-        <p class="titlu">Lead Backend</p>
-        <p class="info-persoana">Stefan Madalin Burdan | <a href="mailto:burdanstefan11@gmail.com" class="email-link">burdanstefan11@gmail.com</a> | +40 720 701 544</p>
-    </div>
+    <!-- Conținut Principal -->
+    <main class="container">
+        <!-- Secțiunea de Descriere -->
+        <section class="hero">
+            <h1>Resurse &amp; Traininguri IT SiSC</h1>
+            <p class="descriere">
+                Bine ai venit pe hub-ul tehnic al departamentului IT SiSC! Aici găsești documentația,
+                rezumatele tehnologiilor și materialele prezentate în cadrul sesiunilor interne de training,
+                alături de datele de contact ale echipei de coordonare pentru orice întrebare sau blocaj tehnic.
+            </p>
+        </section>
 
-    <div class="card-contact">
-        <p class="titlu">Lead Mafia</p>
-        <p class="info-persoana">Victor Mihai Ilie | <a href="mailto:victorilie93@gmail.com" class="email-link">victorilie93@gmail.com</a> | +40 720 011 302</p>
-    </div>
+        <!-- Secțiunea Date de Contact -->
+        <section class="contact-section">
+            <h2>Contact suport</h2>
+            <div class="contact-grid">
+                <div class="card-contact">
+                    <p class="titlu">Director IT</p>
+                    <p class="nume">Sebastian Gabriel Mihai</p>
+                    <div class="social-links">
+                        <a href="tel:+40771091428" class="social-icon" aria-label="Telefon"><i class="fa-solid fa-phone"></i></a>
+                        <a href="mailto:mihaigsebi@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100091904871939" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/seby.mihay/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
 
-    <div class="card-contact">
-        <p class="titlu">Lead Extern</p>
-        <p class="info-persoana">Dragos Bratu | <a href="mailto:bratuudragos@gmail.com" class="email-link">bratuudragos@gmail.com</a> | +40 753 436 689</p>
-    </div>
-</div>
+                <div class="card-contact">
+                    <p class="titlu">Lead FrontEnd</p>
+                    <p class="nume">Maria Veronica Holban-Ichim</p>
+                    <div class="social-links">
+                        <a href="tel:+40763575367" class="social-icon" aria-label="Telefon"><i class="fa-solid fa-phone"></i></a>
+                        <a href="mailto:maria92006v@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100012279423090" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/maria_holban0/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-contact">
+                    <p class="titlu">Lead Backend</p>
+                    <p class="nume">Ștefan Mădălin Burdan</p>
+                    <div class="social-links">
+                        <a href="tel:+40720701544" class="social-icon" aria-label="Telefon"><i class="fa-solid fa-phone"></i></a>
+                        <a href="mailto:burdanstefan11@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/stefan.burdan11" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ste.fan727/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-contact">
+                    <p class="titlu">Lead DevOps</p>
+                    <p class="nume">Mafia</p>
+                    <div class="social-links">
+                        <a href="tel:+namCartela" class="social-icon" aria-label="Telefon"><i class="fa-solid fa-phone"></i></a>
+                        <a href="mailto:nush@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="bagPlInFB" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="nam" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-contact">
+                    <p class="titlu">Lead Extern</p>
+                    <p class="nume">Dragoș Bratu</p>
+                    <div class="social-links">
+                        <a href="tel:+40753436689" class="social-icon" aria-label="Telefon"><i class="fa-solid fa-phone"></i></a>
+                        <a href="mailto:bratuudragos@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61581583206214" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/wdragosss/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--        &lt;!&ndash; Secțiunea Tehnologii Folosite &ndash;&gt;-->
+<!--        <section class="tech-section">-->
+<!--            <h2>Tehnologii folosite</h2>-->
+<!--            <div class="tech-grid">-->
+<!--                <div class="tech-card">-->
+<!--                    <h3>FrontEnd</h3>-->
+<!--                    <div class="tech-icons" id="frontend-tech">-->
+<!--                        &lt;!&ndash; Aici vom adăuga iconițele pentru FrontEnd &ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="tech-card">-->
+<!--                    <h3>Backend</h3>-->
+<!--                    <div class="tech-icons" id="backend-tech">-->
+<!--                        &lt;!&ndash; Aici vom adăuga iconițele pentru Backend &ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+    </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>

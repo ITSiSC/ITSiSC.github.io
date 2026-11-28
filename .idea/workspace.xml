@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9c040cb-ad01-4aa8-9f0e-e0f50bd88151" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/214.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/409.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/http.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git-web/git-web.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git-web/git-web.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git-web/git-web.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html-css/html-css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html-css/html-css.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html-css/html-css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +30,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,11 +49,73 @@
     &quot;accountId&quot;: &quot;2fb564a6-68be-42c4-8058-2892f9344de6&quot;
   }
 }</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.7845840978967509" />
+      <entry key="MS500" value="1.9528768051850953" />
+      <entry key="S2" value="2.143618800178195" />
+      <entry key="S5" value="3.1080065533689285" />
+      <entry key="S10" value="4.789307123868639" />
+      <entry key="S30" value="8.89527583943714" />
+      <entry key="S60" value="12.921519458108023" />
+      <entry key="M2" value="18.08722547293618" />
+      <entry key="M5" value="24.48390905981425" />
+      <entry key="M10" value="30.49394478917696" />
+      <entry key="M15" value="37.663729956311805" />
+      <entry key="M30" value="65.3795743581035" />
+      <entry key="H1" value="115.10217383177067" />
+      <entry key="H2" value="170.84998041697673" />
+      <entry key="H4" value="215.06041027130135" />
+      <entry key="D1" value="265.1287758963771" />
+      <entry key="W1" value="275.2611433147086" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="4.410708382610134E-278" />
+      <entry key="S10" value="2.1001686557536602E-139" />
+      <entry key="S30" value="5.944081071779137E-47" />
+      <entry key="S60" value="7.709786684324757E-24" />
+      <entry key="M2" value="2.7766502636163E-12" />
+      <entry key="M5" value="2.384979716402008E-5" />
+      <entry key="M10" value="0.004982915194794405" />
+      <entry key="M15" value="0.03176138489101303" />
+      <entry key="M30" value="0.26185750441191213" />
+      <entry key="H1" value="0.9341017247630867" />
+      <entry key="H2" value="1.8910874015811454" />
+      <entry key="H4" value="2.736132396500991" />
+      <entry key="D1" value="3.7520986074635796" />
+      <entry key="W1" value="3.9635421221523113" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.1260670968805822" />
+      <entry key="MS500" value="1.7423626133554626" />
+      <entry key="S2" value="2.0841045619043235" />
+      <entry key="S5" value="3.079314892720913" />
+      <entry key="S10" value="4.770882890509036" />
+      <entry key="S30" value="8.885411515189869" />
+      <entry key="S60" value="12.912802803808924" />
+      <entry key="M2" value="18.079523255634662" />
+      <entry key="M5" value="24.479054761304504" />
+      <entry key="M10" value="30.495533436169534" />
+      <entry key="M15" value="37.69237354460537" />
+      <entry key="M30" value="65.63832169033088" />
+      <entry key="H1" value="116.03351734189351" />
+      <entry key="H2" value="172.73908844771475" />
+      <entry key="H4" value="217.79533080557206" />
+      <entry key="D1" value="268.88063244944686" />
+      <entry key="W1" value="279.2246497259802" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0,
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3KxJ4HaxFodltTdbDMzqL4Tbz4o" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -72,7 +148,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.10968.77" />
+        <option value="bundled-js-predefined-d6986cc7102b-56aff7b04f6f-JavaScript-WS-263.7307.348" />
       </set>
     </attachedChunks>
   </component>
@@ -88,6 +164,8 @@
       <workItem from="1792751644374" duration="269000" />
       <workItem from="1792751988420" duration="703000" />
       <workItem from="1794654804930" duration="7000" />
+      <workItem from="1795190927688" duration="329000" />
+      <workItem from="1795819043269" duration="10037000" />
     </task>
     <servers />
   </component>
